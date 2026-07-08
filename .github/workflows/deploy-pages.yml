@@ -1,0 +1,42 @@
+name: Deploy APT Repo with LFS to Pages
+
+on:
+  push:
+    branches: ["main"] # 當 main 分支有 push 時觸發
+
+# 設定權限，允許 Action 修改並發布 Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps: deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 關鍵步驟：在雲端執行 LFS 檢出，把真正的大 .deb 檔案拉下來
+      - name: Checkout LFS objects
+        run: git lfs pull
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # 將目前目錄下的所有檔案（含解開的 .deb）打包成 Pages 構件
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,193 @@
+Package: efivar
+Version: 38-3.1build1
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 215
+Depends: libc6 (>= 2.38), libefisec1t64 (>= 38), libefivar1t64 (= 38-3.1build1), libefiboot1t64 (= 38-3.1build1)
+Filename: ./efivar_38-3.1build1_arm64.deb
+Size: 29326
+MD5sum: 3a41c69e8f416362e11423bbc7d4691a
+SHA1: 69b98fed6fc586d8e0bf9859f71b47b583ab6344
+SHA256: 978dfbca1df652c3d6415aeeb21cceec2888f3fc3b87952eb59ce5dd8a0874b3
+Section: admin
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/rhinstaller/efivar
+Description: Tools to manage UEFI variables
+ efivar provides a simple command line interface to the UEFI variable facility.
+Original-Maintainer: Debian UEFI Maintainers <debian-efi@lists.debian.org>
+
+Package: iec-firmware-capsule-pkg
+Version: 0.7.11.2
+Architecture: arm64
+Maintainer: Inventec
+Filename: ./iec-firmware-capsule_0.7.11.2.deb
+Size: 6561304
+MD5sum: fbec0b3552cddb00ae3b38da36288efa
+SHA1: e95600f670f2cc847c8aeedc7f2c3151b7cfa828
+SHA256: b83c416cc9edc9d35c8c38608e9819d49679c0cef782086efb9c698ebde0ca49
+Section: Software
+Priority: optional
+Description: non-HLOS capsule update
+
+Package: libefisec1t64
+Source: efivar
+Version: 38-3.1build1
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 84
+Depends: libc6 (>= 2.34)
+Breaks: efibootmgr (<< 0.12-2), libefisec1 (<< 38-3.1build1)
+Replaces: libefisec1
+Provides: libefisec1 (= 38-3.1build1)
+Filename: ./libefisec1t64_38-3.1build1_arm64.deb
+Size: 16268
+MD5sum: 7db9f44e33e3122e37572ad9c83def1c
+SHA1: 71c193b9e6d07aa6a7fc3c9ea564337f0f482b01
+SHA256: dbe232e50324ccf212ec7086aff5b11751522d34c2adaeb5fb7c2eb23e0acfb9
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/rhinstaller/efivar
+Description: Library to manage UEFI variables
+ Library to allow for the simple manipulation of UEFI variables related to
+ security.
+Original-Maintainer: Debian UEFI Maintainers <debian-efi@lists.debian.org>
+
+Package: linux-buildinfo-6.8.0-1080-qcom
+Source: linux-qcom
+Version: 6.8.0-1080.86.qc01w
+Architecture: arm64
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 3305
+Filename: ./linux-buildinfo-6.8.0-1080-qcom_6.8.0-1080.86.qc01w_arm64.deb
+Size: 1355892
+MD5sum: 67f7d3de711a126a5a25965e41e2b77d
+SHA1: 34aea542fe37fe538e9fdc149f89c275f5ad7fff
+SHA256: 4315cd07c55d015da8d003f0951b542d902455959112c3d52ef6bb083100e4b4
+Section: kernel
+Priority: optional
+Description: Linux kernel buildinfo for version 6.8.0 on ARMv8 SMP
+ This package contains the Linux kernel buildinfo for version 6.8.0 on
+ ARMv8 SMP.
+ .
+ You likely do not want to install this package.
+
+Package: linux-headers-6.8.0-1080-qcom
+Source: linux-qcom
+Version: 6.8.0-1080.86.qc01w
+Architecture: arm64
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 22944
+Depends: linux-qcom-headers-6.8.0-1080, libc6 (>= 2.38), libelf1t64 (>= 0.144), libssl3t64 (>= 3.0.0), zlib1g (>= 1:1.2.3.3)
+Provides: linux-headers, linux-headers-3.0
+Filename: ./linux-headers-6.8.0-1080-qcom_6.8.0-1080.86.qc01w_arm64.deb
+Size: 3891032
+MD5sum: 6512b358b96b40f771578a3626f62e99
+SHA1: a416c7f452b9f75a73ebe3a67e45ed18a5665315
+SHA256: dc5640307e83ca7c292c3f4945fefaaedec5e8fc431a35ac4eded10ebd074b93
+Section: devel
+Priority: optional
+Description: Linux kernel headers for version 6.8.0 on ARMv8 SMP
+ This package provides kernel header files for version 6.8.0 on
+ ARMv8 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-6.8.0-1080/debian.README.gz for details.
+
+Package: linux-image-6.8.0-1080-qcom
+Source: linux-qcom
+Version: 6.8.0-1080.86.qc01w
+Architecture: arm64
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 18269
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-6.8.0-1080-qcom, linux-firmware (>= 20240318.git3b128b60-0ubuntu2.22)
+Recommends: flash-kernel | grub-efi-arm64, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-qcom-tools, linux-headers-6.8.0-1080-qcom
+Conflicts: linux-image-unsigned-6.8.0-1080-qcom
+Breaks: flash-kernel (<< 3.90ubuntu2)
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, zfs-dkms, zfs-modules
+Filename: ./linux-image-6.8.0-1080-qcom_6.8.0-1080.86.qc01w_arm64.deb
+Size: 18718912
+MD5sum: aae0698e911ca5a9b4d93fada902a74b
+SHA1: d38b21e0999f50d370f5ff7c47ba46d480c68bbc
+SHA256: 2084feb13134d24012e3c9b7d9650e29f77544b4ecfc5ccbdd88200597eaade9
+Section: kernel
+Priority: optional
+Description: Linux kernel image for version 6.8.0 on ARMv8 SMP
+ This package contains the Linux kernel image for version 6.8.0 on
+ ARMv8 SMP.
+ .
+ Supports Qualcomm SoC processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-qcom meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-libc-dev-qcom
+Source: linux-qcom
+Version: 6.8.0-1080.86.qc01w
+Architecture: all
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 1414
+Filename: ./linux-libc-dev-qcom_6.8.0-1080.86.qc01w_all.deb
+Size: 941532
+MD5sum: 8bd936847ff8b6a1d8bc311f7688162c
+SHA1: dd348afd71848d453792c6167928af1f21ad9a8a
+SHA256: 972fceb0d3fec1942fe7e2f5ee6449b56a890c433f632505946e21bd4c703cba
+Section: devel
+Priority: optional
+Description: Linux Kernel Headers for development
+ This package provides additional downstream headers from the Linux kernel.
+ These headers are used by the installed headers for GNU glibc and other system
+ libraries. They are NOT meant to be used to build third-party modules for
+ your kernel. Use linux-qcom-headers-* packages for that.
+
+Package: linux-modules-6.8.0-1080-qcom
+Source: linux-qcom
+Version: 6.8.0-1080.86.qc01w
+Architecture: arm64
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 234790
+Filename: ./linux-modules-6.8.0-1080-qcom_6.8.0-1080.86.qc01w_arm64.deb
+Size: 242442432
+MD5sum: d8bf57eea939fa5bb1946faf18d2efb0
+SHA1: 28d3e62f7299ff1ce05643e64ea8b19b0e8cde3b
+SHA256: 77526937ef35fcbd560a06e1ca2346340b7a0076726f13515e2f37aa1a5ae0a0
+Section: kernel
+Priority: optional
+Description: Linux kernel modules for version 6.8.0 on ARMv8 SMP
+ Contains the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Qualcomm SoC processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-qcom meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-qcom-headers-6.8.0-1080
+Source: linux-qcom
+Version: 6.8.0-1080.86.qc01w
+Architecture: all
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 179246
+Depends: coreutils
+Filename: ./linux-qcom-headers-6.8.0-1080_6.8.0-1080.86.qc01w_all.deb
+Size: 17279080
+MD5sum: 56d6cff9015c4f4f286af0e13757abac
+SHA1: 8a952b2e5f159ded4d5958406e5ad9983442b25d
+SHA256: 4893cf85ba77cb2b6b82fff50139ce23612373cecb2a75c6dec136d3da4f52d9
+Section: devel
+Priority: optional
+Multi-Arch: foreign
+Description: Header files related to Linux kernel version 6.8.0
+ This package provides kernel header files for version 6.8.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-qcom-headers-6.8.0-1080/debian.README.gz for details
+

@@ -22,10 +22,10 @@ Version: 0.7.11.2
 Architecture: arm64
 Maintainer: Inventec
 Filename: ./iec-firmware-capsule_0.7.11.2.deb
-Size: 6561304
-MD5sum: fbec0b3552cddb00ae3b38da36288efa
-SHA1: e95600f670f2cc847c8aeedc7f2c3151b7cfa828
-SHA256: b83c416cc9edc9d35c8c38608e9819d49679c0cef782086efb9c698ebde0ca49
+Size: 6561342
+MD5sum: 402db18258ca1db4436ce688c74b98ac
+SHA1: 32c47e941f7adb49711268046eeb92512b497121
+SHA256: 68e0ffb7d0d3a6d64356e381cae58c0620ac1faa569c8ac2aeb01a9348aa22cd
 Section: Software
 Priority: optional
 Description: non-HLOS capsule update
@@ -56,15 +56,15 @@ Original-Maintainer: Debian UEFI Maintainers <debian-efi@lists.debian.org>
 
 Package: linux-buildinfo-6.8.0-1080-qcom
 Source: linux-qcom
-Version: 6.8.0-1080.86.qc01w
+Version: 6.8.0-1080.87.qc01w
 Architecture: arm64
 Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
-Installed-Size: 3305
-Filename: ./linux-buildinfo-6.8.0-1080-qcom_6.8.0-1080.86.qc01w_arm64.deb
-Size: 1355892
-MD5sum: 67f7d3de711a126a5a25965e41e2b77d
-SHA1: 34aea542fe37fe538e9fdc149f89c275f5ad7fff
-SHA256: 4315cd07c55d015da8d003f0951b542d902455959112c3d52ef6bb083100e4b4
+Installed-Size: 3307
+Filename: ./linux-buildinfo-6.8.0-1080-qcom_6.8.0-1080.87.qc01w_arm64.deb
+Size: 1357238
+MD5sum: 1e44dae60da0e41e0cd5ba7d5f7e6d29
+SHA1: 474922ffed2b5372dbe94f2e80f2b92ca47b11ae
+SHA256: 738ebb99bb2668c9cce7af836d765f22fa4488821afcdb2e6176b4ce016f6d8d
 Section: kernel
 Priority: optional
 Description: Linux kernel buildinfo for version 6.8.0 on ARMv8 SMP
@@ -75,17 +75,17 @@ Description: Linux kernel buildinfo for version 6.8.0 on ARMv8 SMP
 
 Package: linux-headers-6.8.0-1080-qcom
 Source: linux-qcom
-Version: 6.8.0-1080.86.qc01w
+Version: 6.8.0-1080.87.qc01w
 Architecture: arm64
 Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
-Installed-Size: 22944
+Installed-Size: 22982
 Depends: linux-qcom-headers-6.8.0-1080, libc6 (>= 2.38), libelf1t64 (>= 0.144), libssl3t64 (>= 3.0.0), zlib1g (>= 1:1.2.3.3)
 Provides: linux-headers, linux-headers-3.0
-Filename: ./linux-headers-6.8.0-1080-qcom_6.8.0-1080.86.qc01w_arm64.deb
-Size: 3891032
-MD5sum: 6512b358b96b40f771578a3626f62e99
-SHA1: a416c7f452b9f75a73ebe3a67e45ed18a5665315
-SHA256: dc5640307e83ca7c292c3f4945fefaaedec5e8fc431a35ac4eded10ebd074b93
+Filename: ./linux-headers-6.8.0-1080-qcom_6.8.0-1080.87.qc01w_arm64.deb
+Size: 3912724
+MD5sum: 6e82753fc6c154670dd3c1f3338ae639
+SHA1: 7569cda1b8471a97433cdfe5fd2c42f1c02a59fc
+SHA256: 746763bf20347ffa3ecd17be58cc03ba345ea056a133cbd35c6a89b0d4a564e3
 Section: devel
 Priority: optional
 Description: Linux kernel headers for version 6.8.0 on ARMv8 SMP
@@ -97,21 +97,21 @@ Description: Linux kernel headers for version 6.8.0 on ARMv8 SMP
 
 Package: linux-image-6.8.0-1080-qcom
 Source: linux-qcom
-Version: 6.8.0-1080.86.qc01w
+Version: 6.8.0-1080.87.qc01w
 Architecture: arm64
 Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
-Installed-Size: 18269
+Installed-Size: 18277
 Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-6.8.0-1080-qcom, linux-firmware (>= 20240318.git3b128b60-0ubuntu2.22)
 Recommends: flash-kernel | grub-efi-arm64, initramfs-tools | linux-initramfs-tool
 Suggests: fdutils, linux-qcom-tools, linux-headers-6.8.0-1080-qcom
 Conflicts: linux-image-unsigned-6.8.0-1080-qcom
 Breaks: flash-kernel (<< 3.90ubuntu2)
 Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, zfs-dkms, zfs-modules
-Filename: ./linux-image-6.8.0-1080-qcom_6.8.0-1080.86.qc01w_arm64.deb
-Size: 18718912
-MD5sum: aae0698e911ca5a9b4d93fada902a74b
-SHA1: d38b21e0999f50d370f5ff7c47ba46d480c68bbc
-SHA256: 2084feb13134d24012e3c9b7d9650e29f77544b4ecfc5ccbdd88200597eaade9
+Filename: ./linux-image-6.8.0-1080-qcom_6.8.0-1080.87.qc01w_arm64.deb
+Size: 18729152
+MD5sum: 9db091eabad243cd2ef97fbdb9a93f1a
+SHA1: a3db92917467070a8bc82db95950fc014503d327
+SHA256: 741c8b710df35cc1fce8503a90d8b470969bc5bf6c1fb9a526a71f56d46e2159
 Section: kernel
 Priority: optional
 Description: Linux kernel image for version 6.8.0 on ARMv8 SMP
@@ -128,15 +128,15 @@ Description: Linux kernel image for version 6.8.0 on ARMv8 SMP
 
 Package: linux-libc-dev-qcom
 Source: linux-qcom
-Version: 6.8.0-1080.86.qc01w
+Version: 6.8.0-1080.87.qc01w
 Architecture: all
 Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
-Installed-Size: 1414
-Filename: ./linux-libc-dev-qcom_6.8.0-1080.86.qc01w_all.deb
-Size: 941532
-MD5sum: 8bd936847ff8b6a1d8bc311f7688162c
-SHA1: dd348afd71848d453792c6167928af1f21ad9a8a
-SHA256: 972fceb0d3fec1942fe7e2f5ee6449b56a890c433f632505946e21bd4c703cba
+Installed-Size: 1416
+Filename: ./linux-libc-dev-qcom_6.8.0-1080.87.qc01w_all.deb
+Size: 942984
+MD5sum: 123d83ff7fd7d0516ac6a2b5d47a46a5
+SHA1: 158aaa83c378c5c22df4cd026d199d79f3b7e1ba
+SHA256: c0f8feb74607fd2c54e536df30fd64e23bd99a7f38735e0fd989d7cd6e1761d7
 Section: devel
 Priority: optional
 Description: Linux Kernel Headers for development
@@ -147,15 +147,15 @@ Description: Linux Kernel Headers for development
 
 Package: linux-modules-6.8.0-1080-qcom
 Source: linux-qcom
-Version: 6.8.0-1080.86.qc01w
+Version: 6.8.0-1080.87.qc01w
 Architecture: arm64
 Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
-Installed-Size: 234790
-Filename: ./linux-modules-6.8.0-1080-qcom_6.8.0-1080.86.qc01w_arm64.deb
-Size: 242442432
-MD5sum: d8bf57eea939fa5bb1946faf18d2efb0
-SHA1: 28d3e62f7299ff1ce05643e64ea8b19b0e8cde3b
-SHA256: 77526937ef35fcbd560a06e1ca2346340b7a0076726f13515e2f37aa1a5ae0a0
+Installed-Size: 234893
+Filename: ./linux-modules-6.8.0-1080-qcom_6.8.0-1080.87.qc01w_arm64.deb
+Size: 242544832
+MD5sum: eaedaba244d06889db7c85858567843e
+SHA1: b2635ec2baee29d85273fa2807c85638e86b35f5
+SHA256: 33f571af119c799e7847b20517f958224a88a461583773011f583f087f5f55f5
 Section: kernel
 Priority: optional
 Description: Linux kernel modules for version 6.8.0 on ARMv8 SMP
@@ -173,16 +173,16 @@ Description: Linux kernel modules for version 6.8.0 on ARMv8 SMP
 
 Package: linux-qcom-headers-6.8.0-1080
 Source: linux-qcom
-Version: 6.8.0-1080.86.qc01w
+Version: 6.8.0-1080.87.qc01w
 Architecture: all
 Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
-Installed-Size: 179246
+Installed-Size: 96006
 Depends: coreutils
-Filename: ./linux-qcom-headers-6.8.0-1080_6.8.0-1080.86.qc01w_all.deb
-Size: 17279080
-MD5sum: 56d6cff9015c4f4f286af0e13757abac
-SHA1: 8a952b2e5f159ded4d5958406e5ad9983442b25d
-SHA256: 4893cf85ba77cb2b6b82fff50139ce23612373cecb2a75c6dec136d3da4f52d9
+Filename: ./linux-qcom-headers-6.8.0-1080_6.8.0-1080.87.qc01w_all.deb
+Size: 14919862
+MD5sum: 473ec1a7065f0ef27c9ea274f21898b3
+SHA1: 97071ae75c132ce7f7f9b9027c28ff60508dae37
+SHA256: ed5a10575e9a8bc51a0e1aaaf6d7cbb04153e2be663e745a23bf6f9ce50bc04e
 Section: devel
 Priority: optional
 Multi-Arch: foreign
